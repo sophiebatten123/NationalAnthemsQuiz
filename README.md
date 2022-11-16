@@ -1,13 +1,13 @@
 ## Idea Brainstorming
 
-![Idea Brainstorming](static/images/ideas-brainstorm.PNG)
+![Idea Brainstorming](assets/images/ideas-brainstorm.PNG)
 
 ## User Stories
 
 ### EPIC: Game Functionality
 
 | ID | As A |I want to be able to...|So that I can...|MoSCoW|
-|----|------|-----------------------|----------------|------------|------|
+|----|------|-----------------------|----------------|------|
 |1| Site User | View the rules of the game when clicked | See how to play the game at any stage | Mo |
 |2| Site User | Click a play button which is over the top of the map | Hear the first national anthem and start the game | Mo |
 |3| Site User | Click a country on the map | Answer the question as to where the national anthem comes from | Mo |
@@ -20,7 +20,7 @@
 ### EPIC: Login and High Score Data Storage
 
 | ID | As A |I want to be able to...|So that I can...|MoSCoW|
-|----|------|-----------------------|----------------|------------|------|
+|----|------|-----------------------|----------------|------|
 |9| Site User | Login to my account | Keep track of my high scores | S |
 |10| Site User | Signup to an account | Keep track of my high scores | S |
 |11| Site User | Be able to compare my high score against other users | Compete against others | Co |
@@ -29,5 +29,5 @@
 ### EPIC: Social Media
 
 | ID | As A |I want to be able to...|So that I can...|MoSCoW|
-|----|------|-----------------------|----------------|------------|------|
+|----|------|-----------------------|----------------|------|
 |13| Site User | Navigate to the games social media page | Receive the latest updates to the game | S |
