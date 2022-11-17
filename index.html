@@ -21,20 +21,18 @@
     <title>Guess the Anthem</title>
 </head>
 <body>
-    <!--------Header Section--------->
-    <div class="container-fluid">
-        <div class="row header-background">
-            <div class="col-4 rules-header pt-4">
-                <i class="fa-solid fa-circle-question pl-4"></i>
-            </div>
-            <div class="col-4 mt-3 mb-3">
-                <h1 class="text-center heading">National Anthems</h1>
-            </div>
-            <div class="col-4 user-details pt-4">
-                <p>Welcome Username! <span class=" pl-4 pr-4 pt-4"><i class="fa-solid fa-user"></i></span></p>
+
+    <!-- Game Play Rules and leaderboard buttons -->
+    <div class="container">
+        <div class="overlay d-flex">
+            <div class="list-group col-3 mx-auto justify-content-center">
+                <button type="button" class="list-item info-button">Play Game</button>
+                <button type="button" class="list-item info-button">Rules</button>
+                <button type="button" class="list-item info-button">Leader Board</button>
             </div>
         </div>
     </div>
+
     <!--world map -->
     <div class="maps">
             <svg id="map_svg" baseprofile="tiny" fill="#ececec" height="857"  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
