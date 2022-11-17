@@ -46,15 +46,16 @@ body {
 }
 
 /*.......................................................Map Styling*/
+
 .maps {
     margin-top: -2%;;
     margin-left: -10%;
-    height: 100vh;
+    height: auto;
     cursor: pointer;
+    background-color: #7d7ded;
 }
 #map_svg {
     width: 100%;
-    /* height: 100%; */
 }
 
 .maps path {
@@ -95,4 +96,235 @@ body {
 
 .info-button:hover {
     border: solid 3px;
+}
+
+/*-----------------------------------------Country Colours*/
+
+path.Canada {
+    fill: #8ec341;
+}
+
+path#GL {
+    fill: red;
+}
+
+path#IS {
+    fill: blue;
+}
+
+path#EC {
+    fill: orange;
+}
+
+path#PE {
+    fill: yellow;
+}
+
+path#BR {
+    fill: #287028;
+}
+
+path#BO {
+    fill: #02a99b;
+}
+
+path#PY {
+    fill: #2b3e8e;
+}
+
+path#UY {
+    fill: red;
+}
+
+path.Argentina {
+    fill: #2375b7;
+}
+
+path.Chile {
+    fill: #6cb675;
+}
+
+path.United.States {
+    fill: #2375b7;
+}
+
+path#MX {
+    fill: #287028;
+}
+
+path#CU {
+    fill: #b7201e;
+}
+
+path#DO {
+    fill: #1a603f;
+}
+
+path#HT {
+    fill: orange;
+}
+
+path.Russian.Federation {
+    fill: #2375b7;
+}
+
+path.Norway {
+    fill: #be212f;
+}
+
+path#SE {
+    fill: yellow;
+}
+
+path#FI {
+    fill: #287028;
+}
+
+path.United.Kingdom {
+    fill: #5a5ac7;
+}
+
+path.China {
+    fill: #009347;
+}
+
+path.Australia {
+    fill: #026737;
+}
+
+path#IN {
+    fill: orange;
+}
+
+path#IR {
+    fill: yellow;
+}
+
+path#PK {
+    fill: red;
+}
+
+path#MN {
+    fill: #8dc143;
+}
+
+path#KZ {
+    fill: #39b44d;
+}
+
+path#KG {
+    fill: #29abe3;
+}
+
+path#UZ {
+    fill: #2c346d;
+}
+
+path#TJ {
+    fill: pink;
+}
+
+path#TM {
+    fill: #036934;
+}
+
+path#AF {
+    fill: #1fba73;
+}
+
+path#AM {
+    fill: red;
+}
+
+path#GE {
+    fill: #697d35;
+}
+
+path#EG {
+    fill: red;
+}
+
+path#LY {
+    fill: #00aa9e;
+}
+
+path#DZ {
+    fill: #026737;
+}
+
+path#MR {
+    fill: orange;
+}
+
+path#ML {
+    fill: #069248;
+}
+
+path#SO {
+    fill: yellow;
+}
+
+path#SD {
+    fill: purple;
+}
+
+path#NA {
+    fill: green;
+}
+
+path#NE {
+    fill: #bdbdea;
+}
+
+path#NE {
+    fill: #4949be;
+}
+
+path.New.Zealand {
+    fill: yellow;
+}
+
+
+path#CD {
+    fill: red;
+}
+
+path.Turkey {
+    fill: #2575b5;
+}
+
+path.Azerbaijan {
+    fill: #282b5e;
+}
+
+path.Japan {
+    fill: red;
+}
+
+path#GT {
+    fill: #515eaa;
+}
+
+path#HN {
+    fill: purple;
+}
+
+path#NI {
+    fill: #e5d022;
+}
+
+path#CR {
+    fill: #e50432;
+}
+
+path#PA {
+    fill: #f78829;
+}
+
+path#CO {
+    fill: #762424;
+}
+
+path#VE {
+    fill: #092b67;
 }
