@@ -1,3 +1,31 @@
+[Game Live Link]()
+[GitHub Repository]()
+
+## GAME NAME HERE
+
+(Developers: Sophie Batten, Laura Mayock, Sarah Todd, Muzhda Noorzad)
+
+![Am I Responsive?]()
+
+**GAME NAME** is an educational and interative game that tests a players knowledge of some of the worlds most famous National Anthems.
+
+## How to play
+
+To play **GAME NAME** click the 'Play Button' on the main page, be ready as after you have clicked the button you will hear the first National Anthem! 
+
+After you have listened to the National Anthem you should select on the map which country you think it originates from, to select the answer click the country using your mouse. How did you do?
+
+Click next to play the next National Anthem. Good Luck!
+
+# Table of Contents:
+
+- [Idea Brainstorming](#idea-brainstorming)
+- [User Stories](#user-stories)
+- [Wireframe](#wireframe)
+- [Site Features](#site-features)
+- [Credits](#credits)
+
+
 ## Idea Brainstorming
 
 ![Idea Brainstorming](assets/images/ideas-brainstorm.PNG)
@@ -31,3 +59,11 @@
 | ID | As A |I want to be able to...|So that I can...|MoSCoW|
 |----|------|-----------------------|----------------|------|
 |13| Site User | Navigate to the games social media page | Receive the latest updates to the game | S |
+
+## Wireframe
+
+![Game Wireframe](assets/images/wireframe.png)
+
+## Site Features
+
+## Credits
