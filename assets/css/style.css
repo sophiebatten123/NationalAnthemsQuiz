@@ -1,8 +1,51 @@
+/*.......................................................General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body {
     background-size: contain;
     background-color: rgba(32, 214, 255, 0.505);
 }
 
+.text-center {
+    text-align: center;
+}
+
+/*.......................................................Header*/
+
+.header-background {
+    background-color: yellow;
+    font-family: 'Comfortaa', cursive;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+/*.......................................................Rules Header*/
+
+.rules-header {
+    text-align: left;
+    font-size: 22px;
+}
+
+.rules-header i:hover {
+    cursor: pointer;
+    color: #727269;
+}
+
+/*.......................................................User login*/
+
+.user-details {
+    text-align: right;
+    font-size: 20px;
+}
+
+.user-details i:hover {
+    cursor: pointer;
+    color: #727269;
+}
+
+/*.......................................................Map Styling*/
 .maps {
     margin-top: -2%;;
     margin-left: -10%;
