@@ -82,26 +82,10 @@ function roundTwo() {
     }
 }
 
-document.getElementById('pause').onclick = function() {
-    $('#audio').html('');
-}
+// Round Three
 
-let country = document.getElementsByClassName("country")
-
-for (let i=0; i < country.length; i++) {
-    country[i].addEventListener('click', function(e) {
-        if(country[i].id == 'Indonesia') {
-            alert('YAY');
-        } else {
-            alert('WRONG');
-        }
-    })
-}
-
-// Round Four
-
-function roundFour() {
-    document.getElementById('round').innerHTML = "<p>Round Four</p>";
+function roundThree() {
+    document.getElementById('round').innerHTML = "<p>Round Three</p>";
     document.getElementById('China').style.fill = "blue";
     document.getElementById('Canada').style.fill = "green";
     document.getElementById('pop-up').style.display = "none";
@@ -109,7 +93,7 @@ function roundFour() {
 
     document.getElementById('play').onclick = function() {
         document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
-        $('#audio').html('<audio autoplay><source src="media/germany.mp3"></audio>');
+        $('#audio').html('<audio autoplay><source src="media/france.mp3"></audio>');
     }
         
     document.getElementById('pause').onclick = function() {
@@ -120,63 +104,20 @@ function roundFour() {
     
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
-            if(country[i].id == 'Germany') {
-                document.getElementById('Germany').style.fill = "black";
+            if(country[i].id == 'France') {
+                document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    roundFive();
+                    roundFour();
                 }
                 $('#audio').html('');
             } else {
-                document.getElementById('Germany').style.fill = "black";
+                document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    roundFive();
-                }
-                $('#audio').html('');
-            }
-        })
-    }
-}
-
-// Round Five
-
-function roundFive() {
-    document.getElementById('round').innerHTML = "<p>Round Five</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
-    document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
-
-    document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
-        $('#audio').html('<audio autoplay><source src="media/japan.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
-    }
-    
-    let country = document.getElementsByClassName("country");
-    
-    for (let i=0; i < country.length; i++) {
-        country[i].addEventListener('click', function(e) {
-            if(country[i].id == 'Japan') {
-                document.getElementById('Japan').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                    roundSix();
-                }
-                $('#audio').html('');
-            } else {
-                document.getElementById('Japan').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                    roundSix();
+                    roundFour();
                 }
                 $('#audio').html('');
             }
