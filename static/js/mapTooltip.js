@@ -1,14 +1,4 @@
-document.getElementById('play').onclick = function() {
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
-    $('#audio').html('<audio autoplay><source src="media/audio.mp3"></audio>');
-}
-
-
-document.getElementById('pause').onclick = function() {
-    $('#audio').html('');
-}
-
-var tooltipSpan = document.getElementById('details-box');
+var tooltip = document.getElementById('details-box');
 var map = document.querySelectorAll('[data-name]');
 document.addEventListener('mouseover', function (e) {
     
@@ -28,15 +18,14 @@ document.addEventListener('mouseover', function (e) {
             map.style.opacity = "0%";
         }
     } catch (error) {
-        console.log("error");
+        console.log("coming soon");
         
-    }
-   
+    }   
 });
 
 window.onmousemove = function (e) {
     var x = e.clientX,
         y = e.clientY;
-    tooltipSpan.style.top = (y + 50) + 'px';
-    tooltipSpan.style.left = (x) + 'px';
+    tooltip.style.top = (y + 50) + 'px';
+    tooltip.style.left = (x) + 'px';
 };
