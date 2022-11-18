@@ -1,0 +1,361 @@
+/*.......................................................General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    background-size: contain;
+    background-color: rgba(32, 214, 255, 0.505);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*.......................................................Header*/
+
+.header-background {
+    background-color: yellow;
+    font-family: 'Comfortaa', cursive;
+    height: auto;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+/*.......................................................Rules Header*/
+
+.rules-header {
+    text-align: left;
+    font-size: 22px;
+}
+
+.rules-header i:hover {
+    cursor: pointer;
+    color: #727269;
+}
+
+/*.......................................................Play button*/
+
+#play {
+    font-size: 40px;
+}
+
+#play:hover {
+    cursor: pointer;
+}
+
+#pause {
+    font-size: 40px;
+}
+
+#pause:hover {
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    position: absolute;
+    top: 200px;
+    z-index: 999;
+}
+
+/*.......................................................User login*/
+
+.user-details {
+    text-align: right;
+    font-size: 20px;
+}
+
+.user-details i:hover {
+    cursor: pointer;
+    color: #727269;
+}
+
+/*.......................................................Map Styling*/
+
+.maps {
+    margin-top: -2%;;
+    margin-left: -10%;
+    height: auto;
+    cursor: pointer;
+    background-color: #7d7ded;
+    position: relative;
+}
+#map_svg {
+    width: 100%;
+}
+
+.maps path {
+    fill: rgba(0, 217, 65, 0.671);
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+.maps path:hover {
+    fill: rgb(215, 111, 0);
+    stroke: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Game play overlay */
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    /* display: none; Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.info-button {
+    margin: 3px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.info-button:hover {
+    border: solid 3px;
+}
+
+/*-----------------------------------------Country Colours*/
+
+path.Canada {
+    fill: #8ec341;
+}
+
+path#GL {
+    fill: red;
+}
+
+path#IS {
+    fill: blue;
+}
+
+path#EC {
+    fill: orange;
+}
+
+path#PE {
+    fill: yellow;
+}
+
+path#BR {
+    fill: #287028;
+}
+
+path#BO {
+    fill: #02a99b;
+}
+
+path#PY {
+    fill: #2b3e8e;
+}
+
+path#UY {
+    fill: red;
+}
+
+path.Argentina {
+    fill: #2375b7;
+}
+
+path.Chile {
+    fill: #6cb675;
+}
+
+path.United.States {
+    fill: #2375b7;
+}
+
+path#MX {
+    fill: #287028;
+}
+
+path#CU {
+    fill: #b7201e;
+}
+
+path#DO {
+    fill: #1a603f;
+}
+
+path#HT {
+    fill: orange;
+}
+
+path.Russian.Federation {
+    fill: #2375b7;
+}
+
+path.Norway {
+    fill: #be212f;
+}
+
+path#SE {
+    fill: yellow;
+}
+
+path#FI {
+    fill: #287028;
+}
+
+path.United.Kingdom {
+    fill: #5a5ac7;
+}
+
+path.China {
+    fill: #009347;
+}
+
+path.Australia {
+    fill: #026737;
+}
+
+path#IN {
+    fill: orange;
+}
+
+path#IR {
+    fill: yellow;
+}
+
+path#PK {
+    fill: red;
+}
+
+path#MN {
+    fill: #8dc143;
+}
+
+path#KZ {
+    fill: #39b44d;
+}
+
+path#KG {
+    fill: #29abe3;
+}
+
+path#UZ {
+    fill: #2c346d;
+}
+
+path#TJ {
+    fill: pink;
+}
+
+path#TM {
+    fill: #036934;
+}
+
+path#AF {
+    fill: #1fba73;
+}
+
+path#AM {
+    fill: red;
+}
+
+path#GE {
+    fill: #697d35;
+}
+
+path#EG {
+    fill: red;
+}
+
+path#LY {
+    fill: #00aa9e;
+}
+
+path#DZ {
+    fill: #026737;
+}
+
+path#MR {
+    fill: orange;
+}
+
+path#ML {
+    fill: #069248;
+}
+
+path#SO {
+    fill: yellow;
+}
+
+path#SD {
+    fill: purple;
+}
+
+path#NA {
+    fill: green;
+}
+
+path#NE {
+    fill: #bdbdea;
+}
+
+path#NE {
+    fill: #4949be;
+}
+
+path.New.Zealand {
+    fill: yellow;
+}
+
+
+path#CD {
+    fill: red;
+}
+
+path.Turkey {
+    fill: #2575b5;
+}
+
+path.Azerbaijan {
+    fill: #282b5e;
+}
+
+path.Japan {
+    fill: red;
+}
+
+path#GT {
+    fill: #515eaa;
+}
+
+path#HN {
+    fill: purple;
+}
+
+path#NI {
+    fill: #e5d022;
+}
+
+path#CR {
+    fill: #e50432;
+}
+
+path#PA {
+    fill: #f78829;
+}
+
+path#CO {
+    fill: #762424;
+}
+
+path#VE {
+    fill: #092b67;
+}
