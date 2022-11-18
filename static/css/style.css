@@ -115,6 +115,16 @@ body {
     z-index: 1;
 }
 
+/*..............................................................Game Popups*/
+
+#pop-up {
+    position: absolute;
+    background-color: white;
+    top: 770px;
+    z-index: 999;
+    display: none;
+}
+
 /* Game play overlay */
 
 .overlay {
