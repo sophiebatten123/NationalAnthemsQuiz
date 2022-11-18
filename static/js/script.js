@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.getElementById('play').onclick = function() {
     document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
     $('#audio').html('<audio autoplay><source src="media/audio.mp3"></audio>');
@@ -7,7 +6,7 @@ document.getElementById('play').onclick = function() {
 document.getElementById('pause').onclick = function() {
     $('#audio').html('');
 }
-=======
+
 var tooltipSpan = document.getElementById('details-box');
 var map = document.querySelectorAll('[data-name]');
 document.addEventListener('mouseover', function (e) {
@@ -40,4 +39,3 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
->>>>>>> 680d625 (Added hover features in the map)
