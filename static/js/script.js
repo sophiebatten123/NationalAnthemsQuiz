@@ -145,23 +145,117 @@ function roundFour() {
     
     let country = document.getElementsByClassName("country");
     
+    for (let i=0; i < country.length; i++) {
+        country[i].addEventListener('click', function(e) {
+            if(country[i].id == 'Germany') {
+                document.getElementById('Germany').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                    roundFive();
+                }
+                $('#audio').html('');
+            } else {
+                document.getElementById('Germany').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                    roundFive();
+                }
+                $('#audio').html('');
+            }
+        })
+    }
+}
+
+// Round Five
+
+function roundFive() {
+    document.getElementById('round').innerHTML = "<p>Round Five</p>";
+    document.getElementById('China').style.fill = "blue";
+    document.getElementById('Canada').style.fill = "green";
+    document.getElementById('pop-up').style.display = "none";
+    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+
+    document.getElementById('play').onclick = function() {
+        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        $('#audio').html('<audio autoplay><source src="media/japan.mp3"></audio>');
+    }
+        
+    document.getElementById('pause').onclick = function() {
+        $('#audio').html('');
+    }
+    
+    let country = document.getElementsByClassName("country");
+    
+    for (let i=0; i < country.length; i++) {
+        country[i].addEventListener('click', function(e) {
+            if(country[i].id == 'Japan') {
+                document.getElementById('Japan').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                    roundSix();
+                }
+                $('#audio').html('');
+            } else {
+                document.getElementById('Japan').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                    roundSix();
+                }
+                $('#audio').html('');
+            }
+        })
+    }
+}
+
 document.getElementById('pause').onclick = function() {
     $('#audio').html('');
 }
 
-let country = document.getElementsByClassName("country")
+// Round Seven
 
-for (let i=0; i < country.length; i++) {
-    country[i].addEventListener('click', function(e) {
-        if(country[i].id == 'Indonesia') {
-            alert('YAY');
-            $('#audio').html('');
-        } else {
-            alert('WRONG');
-            $('#audio').html('');
-        }
-    })
+function roundSeven() {
+    document.getElementById('round').innerHTML = "<p>Round Seven</p>";
+    document.getElementById('China').style.fill = "blue";
+    document.getElementById('Canada').style.fill = "green";
+    document.getElementById('pop-up').style.display = "none";
+    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+
+    document.getElementById('play').onclick = function() {
+        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        $('#audio').html('<audio autoplay><source src="media/spain.mp3"></audio>');
+    }
+        
+    document.getElementById('pause').onclick = function() {
+        $('#audio').html('');
+    }
+    
+    let country = document.getElementsByClassName("country");
+    
+    for (let i=0; i < country.length; i++) {
+        country[i].addEventListener('click', function(e) {
+            if(country[i].id == 'Spain') {
+                document.getElementById('Spain').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                }
+                $('#audio').html('');
+            } else {
+                document.getElementById('Spain').style.fill = "black";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up').style.display = "block";
+                document.getElementById('next-round').onclick = function() {
+                }
+                $('#audio').html('');
+            }
+        })
+    }
 }
+
 
 // Map Information
 var tooltipSpan = document.getElementById('details-box');
@@ -171,7 +265,6 @@ document.addEventListener('mouseover', function (e) {
     try {
         if (e.target.tagName == 'path') {
             if(map == undefined) {
-                console.log("coming soon");
             }
             var content = e.target.dataset.name;
             document.getElementById("details-box").innerHTML = content;
@@ -183,9 +276,7 @@ document.addEventListener('mouseover', function (e) {
             document.getElementById("details-box").style.opacity = "0%";
             map.style.opacity = "0%";
         }
-    } catch (error) {
-        console.log("error");
-        
+    } catch (error) {  
     }
    
 });
