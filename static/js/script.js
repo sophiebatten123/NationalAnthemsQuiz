@@ -1,3 +1,7 @@
+document.getElementById('play').onclick = function() {
+    $('#audio').html('<audio autoplay><source src="media/audio.mp3"></audio>');
+}
+
 var tooltipSpan = document.getElementById('details-box');
 var map = document.querySelectorAll('[data-name]');
 document.addEventListener('mouseover', function (e) {

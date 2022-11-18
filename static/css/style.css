@@ -15,6 +15,7 @@ body {
 .header-background {
     background-color: yellow;
     font-family: 'Comfortaa', cursive;
+    height: auto;
 }
 
 .heading:hover {
@@ -31,6 +32,34 @@ body {
 .rules-header i:hover {
     cursor: pointer;
     color: #727269;
+}
+
+/*.......................................................Play button*/
+
+#play {
+    font-size: 40px;
+}
+
+#play:hover {
+    cursor: pointer;
+}
+
+#pause {
+    font-size: 40px;
+}
+
+#pause:hover {
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    position: absolute;
+    top: 200px;
+    z-index: 999;
 }
 
 /*.......................................................User login*/
@@ -53,6 +82,7 @@ body {
     height: auto;
     cursor: pointer;
     background-color: #7d7ded;
+    position: relative;
 }
 #map_svg {
     width: 100%;
@@ -106,6 +136,7 @@ body {
     border: none;
     border-radius: 10px;
     padding: 5px;
+    width: 100%;
 }
 
 .info-button:hover {
