@@ -1,0 +1,1 @@
+web: guinicorn anthem_game.wsgi
