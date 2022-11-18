@@ -5,7 +5,6 @@ document.addEventListener('mouseover', function (e) {
     try {
         if (e.target.tagName == 'path') {
             if(map == undefined) {
-                console.log("coming soon");
             }
             var content = e.target.dataset.name;
             document.getElementById("details-box").innerHTML = content;
@@ -18,8 +17,6 @@ document.addEventListener('mouseover', function (e) {
             map.style.opacity = "0%";
         }
     } catch (error) {
-        console.log("coming soon");
-        
     }   
 });
 
