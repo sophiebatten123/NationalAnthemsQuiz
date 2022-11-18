@@ -210,17 +210,11 @@ function roundFive() {
         })
     }
 }
-    
-document.getElementById('pause').onclick = function() {
-    $('#audio').html('');
-}
 
+// Round Six
 
-
-// Round Seven
-
-function roundSeven() {
-    document.getElementById('round').innerHTML = "<p>Round Seven</p>";
+function roundSix() {
+    document.getElementById('round').innerHTML = "<p>Round Six</p>";
     document.getElementById('China').style.fill = "blue";
     document.getElementById('Canada').style.fill = "green";
     document.getElementById('pop-up').style.display = "none";
@@ -228,7 +222,7 @@ function roundSeven() {
 
     document.getElementById('play').onclick = function() {
         document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
-        $('#audio').html('<audio autoplay><source src="media/spain.mp3"></audio>');
+        $('#audio').html('<audio autoplay><source src="media/russia.mp3"></audio>');
     }
         
     document.getElementById('pause').onclick = function() {
@@ -237,25 +231,8 @@ function roundSeven() {
     
     let country = document.getElementsByClassName("country");
     
-    for (let i=0; i < country.length; i++) {
-        country[i].addEventListener('click', function(e) {
-            if(country[i].id == 'Spain') {
-                document.getElementById('Spain').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                }
-                $('#audio').html('');
-            } else {
-                document.getElementById('Spain').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                }
-                $('#audio').html('');
-            }
-        })
-    }
+document.getElementById('pause').onclick = function() {
+    $('#audio').html('');
 }
 
 
@@ -289,4 +266,3 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
-
