@@ -1,1 +1,1 @@
-web: guinicorn anthem_game.wsgi
+web: gunicorn anthem_game.wsgi
