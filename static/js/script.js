@@ -39,3 +39,4 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
+
