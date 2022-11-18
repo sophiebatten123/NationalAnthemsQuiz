@@ -1,5 +1,3 @@
-const correctSound = new Audio('audio.mp3');
-
 document.getElementById('play').onclick = function() {
-    correctSound.play();
+    $('#audio').html('<audio autoplay><source src="media/audio.mp3"></audio>');
 }
