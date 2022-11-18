@@ -71,6 +71,20 @@ body {
     cursor: pointer;
 }
 
+#details-box {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 24px;
+    position: fixed;
+    color: white;
+    font-family: "Poppins";
+    background-color: black;
+    width: fit-content;
+    transform: translateX(-50%);
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
 /* Game play overlay */
 
 .overlay {
@@ -100,8 +114,15 @@ body {
 
 /*-----------------------------------------Country Colours*/
 
-path.Canada {
+/* path.Canada {
     fill: #8ec341;
+    
+} */
+
+a [data-name=Russia]:hover {
+    opacity: 100%;
+    stroke: rgb(205, 255, 236);
+    border: 33px solid red;
 }
 
 path#GL {
