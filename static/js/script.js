@@ -15,8 +15,10 @@ for (let i=0; i < country.length; i++) {
     country[i].addEventListener('click', function(e) {
         if(country[i].id == 'Indonesia') {
             alert('YAY');
+            $('#audio').html('');
         } else {
             alert('WRONG');
+            $('#audio').html('');
         }
     })
 }
@@ -51,4 +53,3 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
-
