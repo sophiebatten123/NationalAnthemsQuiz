@@ -4,7 +4,7 @@ document.getElementById('play').onclick = function() {
     document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
     $('#audio').html('<audio autoplay><source src="media/audio.mp3"></audio>');
 }
-
+    
 document.getElementById('pause').onclick = function() {
     $('#audio').html('');
 }
@@ -15,8 +15,10 @@ for (let i=0; i < country.length; i++) {
     country[i].addEventListener('click', function(e) {
         if(country[i].id == 'Indonesia') {
             alert('YAY');
+            $('#audio').html('');
         } else {
             alert('WRONG');
+            $('#audio').html('');
         }
     })
 }
