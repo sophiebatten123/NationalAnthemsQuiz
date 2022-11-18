@@ -82,47 +82,20 @@ function roundTwo() {
     }
 }
 
-// Round Three
+document.getElementById('pause').onclick = function() {
+    $('#audio').html('');
+}
 
-function roundThree() {
-    document.getElementById('round').innerHTML = "<p>Round Three</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
-    document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+let country = document.getElementsByClassName("country")
 
-    document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
-        $('#audio').html('<audio autoplay><source src="media/france.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
-    }
-    
-    let country = document.getElementsByClassName("country");
-    
-    for (let i=0; i < country.length; i++) {
-        country[i].addEventListener('click', function(e) {
-            if(country[i].id == 'France') {
-                document.getElementById('France').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                    roundFour();
-                }
-                $('#audio').html('');
-            } else {
-                document.getElementById('France').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                    roundFour();
-                }
-                $('#audio').html('');
-            }
-        })
-    }
+for (let i=0; i < country.length; i++) {
+    country[i].addEventListener('click', function(e) {
+        if(country[i].id == 'Indonesia') {
+            alert('YAY');
+        } else {
+            alert('WRONG');
+        }
+    })
 }
 
 // Round Four
