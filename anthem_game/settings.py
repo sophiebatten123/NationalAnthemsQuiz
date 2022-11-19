@@ -46,12 +46,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'scores',
     'game',
+    'crispy_forms',
 ]
 
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
