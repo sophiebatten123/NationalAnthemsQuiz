@@ -25,9 +25,9 @@ function roundOne() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    roundTwo();
                     result++;
                     score.textContent = result;
+                    roundTwo();
                 }
                 $('#audio').html('');
             } else {
@@ -70,6 +70,8 @@ function roundTwo() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundThree();
                 }
                 $('#audio').html('');
@@ -114,6 +116,8 @@ function roundThree() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundFour();
                 }
                 $('#audio').html('');
@@ -157,6 +161,8 @@ function roundFour() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundFive();
                 }
                 $('#audio').html('');
@@ -200,6 +206,8 @@ function roundFive() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundSix();
                 }
                 $('#audio').html('');
@@ -243,6 +251,8 @@ function roundSix() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundSeven();
                 }
                 $('#audio').html('');
@@ -286,6 +296,8 @@ function roundSeven() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                 }
                 $('#audio').html('');
             } else {
