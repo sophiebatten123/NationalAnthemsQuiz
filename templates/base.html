@@ -26,7 +26,7 @@
 <body>
 
     <!--------Header Section--------->
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="row">
             <div class="col-4 rules-header pt-4 header-background">
                 <i class="fa-solid fa-circle-question pl-4" id="restartButton"></i>
@@ -60,7 +60,7 @@
                 <p>{% if user.is_authenticated %}Welcome{{ user.username }}! {% else %} Welcome!{% endif %}<span class=" pl-4 pr-4 pt-4"><i class="fa-solid fa-user"></i></span></p>
             </div>
         </div>
-    </div>
+    </nav>
   
   {% block content %}
 
