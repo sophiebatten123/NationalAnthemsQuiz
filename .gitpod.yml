@@ -4,6 +4,10 @@ tasks:
   - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
     command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
   - command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
+    env:
+      SECRET_KEY: e7sz(%i+2-2%#$1n1lz$trw$7o(2_4xb0bd))z-mog*+3=fvfo
+    command: echo $SECRET_KEY
+  
 vscode:
   extensions:
     - ms-python.python
