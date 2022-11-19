@@ -1,3 +1,5 @@
+let result =0;
+
 // Round One
 
 function roundOne() {
@@ -14,6 +16,7 @@ function roundOne() {
     }
     
     let country = document.getElementsByClassName("country");
+    let score = document.querySelector('.score');
     
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
@@ -23,6 +26,8 @@ function roundOne() {
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundTwo();
+                    result++;
+                    score.textContent = result;
                 }
                 $('#audio').html('');
             } else {
@@ -326,3 +331,9 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
+
+// restart Button
+const restartButton = document.querySelector('.row #restartButton');
+restartButton.addEventListener("click", () => {
+    console.log("Restart")
+});
