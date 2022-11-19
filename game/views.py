@@ -8,4 +8,4 @@ class GameView(TemplateView):
     """
     View to render game page
     """
-    template_name = 'game/game.html'
+    template_name = 'game/index.html'
