@@ -1,3 +1,5 @@
+let result =0;
+
 // Round One
 
 function roundOne() {
@@ -14,6 +16,7 @@ function roundOne() {
     }
     
     let country = document.getElementsByClassName("country");
+    let score = document.querySelector('.score');
     
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
@@ -22,6 +25,8 @@ function roundOne() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundTwo();
                 }
                 $('#audio').html('');
@@ -65,6 +70,8 @@ function roundTwo() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundThree();
                 }
                 $('#audio').html('');
@@ -109,6 +116,8 @@ function roundThree() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundFour();
                 }
                 $('#audio').html('');
@@ -152,6 +161,8 @@ function roundFour() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundFive();
                 }
                 $('#audio').html('');
@@ -195,6 +206,8 @@ function roundFive() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundSix();
                 }
                 $('#audio').html('');
@@ -238,6 +251,8 @@ function roundSix() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                     roundSeven();
                 }
                 $('#audio').html('');
@@ -281,6 +296,8 @@ function roundSeven() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
+                    result++;
+                    score.textContent = result;
                 }
                 $('#audio').html('');
             } else {
@@ -326,3 +343,9 @@ window.onmousemove = function (e) {
     tooltipSpan.style.top = (y + 50) + 'px';
     tooltipSpan.style.left = (x) + 'px';
 };
+
+// restart Button
+const restartButton = document.querySelector('.row #restartButton');
+restartButton.addEventListener("click", () => {
+    console.log("Restart")
+});

@@ -2,7 +2,15 @@
 {% load static %}
 
 {% block content %}
+
+<!-- score -->
+<div class="score-div">
+    score: 
+    <span class="score">0</span>
+</div>
+
 <!-- Game Play Rules and leaderboard buttons -->
+
 <div class="container" id="main-buttons">
     <div class="overlay d-flex">
         <div class="list-group col-6 col-lg-3 mx-auto justify-content-center">
@@ -43,7 +51,7 @@
 <!--Message Popups-->
 <div class="container-fluid" id="pop-up">
     <div class="row">
-        <div class="col-12">
+        <div class="col-4">
             <span id="pop-up-text"></span>
             <button type="link" class="list-item info-button" id="next-round">Next Round</button>
         </div>
