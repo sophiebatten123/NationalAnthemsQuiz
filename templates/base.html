@@ -31,11 +31,33 @@
             <div class="col-4 rules-header pt-4 header-background">
                 <i class="fa-solid fa-circle-question pl-4"></i>
             </div>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Rules <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Leader Board</a>
+                </li>
+                {% if user.is_authenticated%}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_signup' %}">Regiser</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                </li>
+              </ul>
+              {% endif %}
+            </div>
             <div class="col-4 pt-3 pb-3 header-background">
                 <h1 class="text-center heading">National Anthems</h1>
             </div>
             <div class="col-4 user-details pt-4 header-background">
-                <p>Welcome Username! <span class=" pl-4 pr-4 pt-4"><i class="fa-solid fa-user"></i></span></p>
+                <p>{% if user.is_authenticated %}Welcome{{ user.username }}! {% else %} Welcome!{% endif %}<span class=" pl-4 pr-4 pt-4"><i class="fa-solid fa-user"></i></span></p>
             </div>
         </div>
     </div>
