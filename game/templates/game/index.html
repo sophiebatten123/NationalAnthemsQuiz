@@ -11,11 +11,13 @@
 
 <!-- Game Play Rules and leaderboard buttons -->
 
-<div class="container" id="main-buttons">
-    <div class="overlay d-flex">
-        <div class="list-group col-6 col-lg-3 mx-auto justify-content-center">
+<div class="container-fluid" id="high">
+    <div class="row">  
+        <div class="list-group col-md-6 col-lg-4 offset-md-3 offset-lg-4 col-sm-12 log-box">
             <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
-            <a href=""><button type="link" class="list-item info-button">Rules</button></a>
+            
+            <a href="{% url 'rules' %}"><button type="link" class="list-item info-button">Rules</button></a>
+
             <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
             {% if user.is_authenticated %}
             <a href="{% url 'account_logout' %}"><button type="link" class="list-item info-button">log out</button></a>
