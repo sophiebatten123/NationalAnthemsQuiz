@@ -1,5 +1,5 @@
 [Game Live Link]()
-[GitHub Repository]()
+[GitHub Repository](https://github.com/users/sophiebatten123/projects/2/views/1)
 
 ## GAME NAME HERE
 
