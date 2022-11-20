@@ -394,8 +394,9 @@ window.onmousemove = function (e) {
     tooltipSpan.style.left = (x) + 'px';
 };
 
-// restart Button
-const restartButton = document.querySelector('.row #restartButton');
-restartButton.addEventListener("click", () => {
-    console.log("Restart")
-});
+//restart Button 
+// const restartButton = document.querySelector('');
+// restartButton.addEventListener("click", () => {
+//     console.log("Restart")
+// });
+
