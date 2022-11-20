@@ -24,7 +24,6 @@ body {
 
 #main-buttons {
     position: absolute;
-    background-color: white;
     top:400px;
     left: 0; 
     right: 0; 
@@ -254,7 +253,7 @@ body {
 }
 
 .info-button:hover {
-    cursor: pointer;
+    border: solid 3px black;
 }
 
 /*-----------------------------------------Country Colours*/
