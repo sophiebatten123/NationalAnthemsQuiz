@@ -26,41 +26,28 @@
 <body>
 
     <!--------Header Section--------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="row">
-            <div class="col-4 rules-header pt-4 header-background">
-                <i class="fa-solid fa-circle-question pl-4" id="restartButton"></i>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Rules <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Leader Board</a>
-                </li>
-                {% if user.is_authenticated%}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account_signup' %}">Regiser</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                </li>
-              </ul>
-              {% endif %}
-            </div>
-            <div class="col-4 pt-3 pb-3 header-background">
-                <h1 class="text-center heading">National Anthems</h1>
-            </div>
-            <div class="col-4 user-details pt-4 header-background">
-                <p>{% if user.is_authenticated %}Welcome{{ user.username }}! {% else %} Welcome!{% endif %}<span class=" pl-4 pr-4 pt-4"><i class="fa-solid fa-user"></i></span></p>
-            </div>
+    
+    <header class="container-fluid header-background">
+      <div class="row pt-4 pb-2">
+        <div class="col-4 rules-header">
+          <i class="fa-solid fa-circle-question pl-4" id="restartButton"></i>
         </div>
-    </nav>
+        <div class="col-4 btns">
+          <a href="#">
+            <h1 class="text-center">National Anthems</h1>
+          </a>
+        </div>
+        <div class="col-4 text-right pt-2 btns">
+            {% if request.user.is_authenticated %}
+              <p>Welcome{{ user.username }}!</p>
+              <a href="{% url 'account_logout' %}">Logout</a>
+            {% else %}
+              <a href="{% url 'account_login' %}" class="pr-4">Login</a>
+              <a href="{% url 'account_signup' %}">Register</a>
+            {% endif %}
+        </div>
+      </div>
+    </header>
   
   {% block content %}
 
@@ -70,7 +57,7 @@
 
       <div id="details-box"></div>
       
-      <div class="maps">
+      <div class="maps mt-5">
   
       <svg id="map_svg" baseprofile="tiny" fill="#ececec" height="700"  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
         <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="Afganistan" data-name="Afghanistan" class="country">

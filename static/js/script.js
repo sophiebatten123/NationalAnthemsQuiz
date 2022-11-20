@@ -32,16 +32,14 @@ document.getElementById('leader-board').onclick = function() {
 // Round One
 
 function roundOne() {
+    document.getElementById('question').style.display = 'block';
     document.getElementById('round').innerHTML = "<p>Round One</p>";
     document.getElementById('main-buttons').style.display = "none";
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/canada.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
