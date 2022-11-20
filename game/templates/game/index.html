@@ -9,7 +9,7 @@
     <div class="list-group mx-auto justify-content-center pt-1 pb-4">
         <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
         <a href="{% url 'rules' %}"><button type="link" class="list-item info-button">Rules</button></a>
-        <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
+        <a href="{% url 'add_score' %}"><button type="link" class="list-item info-button">Leaderboard</button></a>
     </div>
 </div>
 <div class="container-fluid" id="question">
@@ -34,25 +34,6 @@
 <div class="container" id="pop-up">
     <span id="pop-up-text"></span>
     <button type="link" class="list-item info-button" id="next-round">Next Round</button>
-</div>
-
-<!--Highscore Board-->
-<div class="container-fluid" id="highscore">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4 white">
-            <h2>Highscores</h2>
-            <table>
-                {% for score in scores %}
-                <tr>
-                    <td class="p-2 pr-4m-2"><p>{{score.name}}</p></td>
-                    <td class="p-2 pr-4m-2"><p class="pl-4">{{score.score}}/10</p></td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-        <div class="col-4"></div>
-    </div>
 </div>
 
 <!--Last Round-->
