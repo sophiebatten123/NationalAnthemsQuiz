@@ -5,9 +5,8 @@
 
 <!-- Game Play Rules and leaderboard buttons -->
 
-
 <div class="container info-buttons" id="main-buttons">
-    <div class="list-group mx-auto justify-content-center pt-4 pb-4">
+    <div class="list-group mx-auto justify-content-center pt-1 pb-4">
         <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
         <a href="{% url 'rules' %}"><button type="link" class="list-item info-button">Rules</button></a>
         <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
@@ -17,7 +16,7 @@
     <div class="row">
         <div class="col-12 text-center pt-2 pb-2">
             <h3>Where does the National Anthem come from?</h3>
-        </div>
+        </div>    
     </div>
 </div>
 <div class="container" id="play">
@@ -25,16 +24,12 @@
 </div>
 </div>
 <span id="audio"></span>
-<span id="round" class="pb-4"></span>
-<!--Counter-->
-<div class="container-fluid" id="counter-area">
-    <div class="row">
-        <div class="col-9"></div>
-        <div class="col-3">
-            <p>Current Score:<span id="counter">0</span></p>
-        </div>
-    </div>
+<!--Counter and rounds-->
+<div class="col-12 counter pt-1">
+    <span id="round"class="pt-1"></span><p>Current Score:<span id="counter">0</span></p>
 </div>
+</div>
+
 <!--Message Popups-->
 <div class="container" id="pop-up">
     <span id="pop-up-text"></span>
