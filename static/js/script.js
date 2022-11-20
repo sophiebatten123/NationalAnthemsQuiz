@@ -36,7 +36,6 @@ function roundOne() {
     document.getElementById('round').innerHTML = "<p>Round One</p>";
     document.getElementById('main-buttons').style.display = "none";
     document.getElementById('play').style.display = "block";
-
     document.getElementById('play').onclick = function() {
         document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/canada.mp3"></audio>');
