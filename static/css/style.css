@@ -52,11 +52,16 @@ body {
 /*.......................................................Header*/
 
 .header-background {
-    background-color: yellow;
     font-family: 'Comfortaa', cursive;
     height: auto;
 }
 
+
+.counter p {
+    margin-bottom: -10px;
+    position:absolute;
+    z-index: 1;
+}
 /*.......................................................Rules Header*/
 
 .rules-header {
@@ -122,10 +127,10 @@ body {
     padding: 20px;
 }
 
+
 /*.......................................................Map Styling*/
 
 .maps {
-    margin-top: -2%;;
     margin-left: -10%;
     height: auto;
     cursor: pointer;
@@ -619,4 +624,20 @@ path#GN {
     border-radius: 25px;
     padding: 20px;
 }
+
+
+
+/*-------------------------------------------------- Media Query */
+
+@media screen and (max-width: 768px) {
+h1 {
+    font-size: 50px;
+}
+
+
+
+}
+
+
+
 
