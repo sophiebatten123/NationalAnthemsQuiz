@@ -45,3 +45,9 @@ def add_score(request):
     }
 
     return render(request, 'game/score.html', context)
+
+
+def rules(request):
+    """ A view to see the game rules """
+
+    return render(request, 'game/rules.html')
