@@ -34,6 +34,7 @@ def add_score(request):
         score = request_body['score']
         number.score = score
         number.name = request.user
+        paginate_by = 10
         number.save()
 
         numbers = Score.objects.all().values()

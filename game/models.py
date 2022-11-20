@@ -12,7 +12,7 @@ class Score(models.Model):
 
     class Meta:
         """ order by score """
-        ordering = ['score']
+        ordering = ['-score']
 
     def __str__(self):
         return f"{self.name}"
