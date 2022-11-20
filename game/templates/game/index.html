@@ -16,14 +16,13 @@
         <div class="list-group col-6 col-lg-3 mx-auto justify-content-center">
             <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
             <a href=""><button type="link" class="list-item info-button">Rules</button></a>
-            <a href=""><button type="link" class="list-item info-button">Leader Board</button></a>
+            <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
             {% if user.is_authenticated %}
             <a href="{% url 'account_logout' %}"><button type="link" class="list-item info-button">log out</button></a>
             {% else %}
             <a href="{% url 'account_signup' %}"><button type="link" class="list-item info-button">Register</button></a>
             <a href="{% url 'account_login' %}"><button type="link" class="list-item info-button">log in</button></a>
             {% endif %}
-            
         </div>
     </div>
 </div>
@@ -48,6 +47,15 @@
 </div>
 <span id="audio"></span>
 <span id="round" class="pb-4"></span>
+<!--Counter-->
+<div class="container-fluid" id="counter-area">
+    <div class="row">
+        <div class="col-9"></div>
+        <div class="col-3">
+            <p>Current Score:<span id="counter">0</span></p>
+        </div>
+    </div>
+</div>
 <!--Message Popups-->
 <div class="container-fluid" id="pop-up">
     <div class="row">
@@ -57,5 +65,34 @@
         </div>
     </div>
 </div>
+
+<!--Highscore Board-->
+<div class="container-fluid" id="highscore">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 white">
+            <h2>Highscores</h2>
+            <table>
+                {% for score in scores %}
+                <tr>
+                    <td class="p-2 pr-4m-2"><p>{{score.name}}</p></td>
+                    <td class="p-2 pr-4m-2"><p class="pl-4">{{score.score}}/10</p></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<!--Last Round-->
+<div class="container-fluid" id="last-round">
+    <div class="row">
+        <div class="col-12">
+            <a href="{% url 'add_score' %}" class="dropdown-item">See my score</a>
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

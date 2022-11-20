@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--Highscore Board-->
+<div class="container-fluid" id="high">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 white">
+            <h2>Highscores</h2>
+            <table>
+                {% for score in scores %}
+                <tr>
+                    <td class="p-2 pr-4m-2"><p>{{score.name}}</p></td>
+                    <td class="p-2 pr-4m-2"><p class="pl-4">{{score.score}}/10</p></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+{% endblock %}

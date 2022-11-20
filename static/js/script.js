@@ -1,4 +1,33 @@
-let result =0;
+// Cookie
+
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+const csrftoken = getCookie('csrftoken');
+
+// Counter
+
+var counter = 0;
+
+// Leaderboard
+
+document.getElementById('leader-board').onclick = function() {
+    document.getElementById('highscore').style.display = "block";
+}
+
 
 // Round One
 
@@ -30,6 +59,8 @@ function roundOne() {
                     roundTwo();
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('Canada').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was Canada!</p>";
@@ -74,7 +105,9 @@ function roundTwo() {
                     score.textContent = result;
                     roundThree();
                 }
+                counter += 1;
                 $('#audio').html('');
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('China').style.fill = "black";
                 document.getElementById('Canada').style.fill = "green";
@@ -121,6 +154,8 @@ function roundThree() {
                     roundFour();
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
@@ -166,6 +201,8 @@ function roundFour() {
                     roundFive();
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('Germany').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
@@ -211,6 +248,8 @@ function roundFive() {
                     roundSix();
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('Japan').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
@@ -256,6 +295,8 @@ function roundSix() {
                     roundSeven();
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
             } else {
                 document.getElementById('Russia').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
@@ -292,6 +333,7 @@ function roundSeven() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Spain') {
+                document.getElementById('pop-up').style.display = "none";
                 document.getElementById('Spain').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
@@ -300,16 +342,40 @@ function roundSeven() {
                     score.textContent = result;
                 }
                 $('#audio').html('');
+                counter += 1;
+                document.getElementById('counter').innerHTML = `${counter}`;
+                endGame();
             } else {
+                document.getElementById('pop-up').style.display = "none";
                 document.getElementById('Spain').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                }
                 $('#audio').html('');
+                endGame();
             }
         })
     }
+}
+
+// End Game
+
+function endGame() {
+    fetch("add_score/", {
+        method: "POST",
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken'),
+                'X-Requested-With': 'XMLHttpRequest',
+                'Content-Type': 'application/json; charset=UTF-8',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                score: counter,
+            })
+        })
+        .then(data => {
+            window.location.href = "add_score/";
+        })
+        .catch(error => {
+            console.log(error);
+        });
 }
 
 
