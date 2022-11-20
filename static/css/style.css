@@ -34,6 +34,18 @@ body {
     border-radius: 5px;
 }
 
+.btns a:hover {
+    text-decoration: none;
+}
+
+.btns a {
+    color: black;
+}
+
+.footer-colour {
+    background-color: yellow;
+}
+
 /*.......................................................Highscores*/
 
 #highscore {
@@ -135,6 +147,10 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.sea {
+    background-color: #7d7ded;
 }
 
 /*.......................................................User login*/

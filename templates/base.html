@@ -68,7 +68,7 @@
         </div>
 
         <div class="col-4 btns">
-          <a href="#">
+          <a href="{% url 'index' %}">
             <h1 class="text-center">National Anthems</h1>
           </a>
         </div>
@@ -90,10 +90,9 @@
   
     <!--World Map -->
 
-      <div id="details-box"></div>
+    <div id="details-box"></div>
       
-      <div class="maps mt-5">
-  
+    <div class="maps">
       <svg id="map_svg" baseprofile="tiny" fill="#ececec" height="700"  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
         <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="Afganistan" data-name="Afghanistan" class="country">
         </path>
@@ -982,32 +981,30 @@
       </svg>
     </div>   
 
-    <div class="page-footer">
-
-        <footer class="text-center text-lg-start" style="background-color: white">
-          <div class="container d-flex justify-content-center py-5">
-            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+    <div class="page-footer container-fluid">
+        <footer class="text-lg-start" style="background-color: white">
+          <div class="row d-flex footer-colour pt-2 pb-2">
+            <div class="col-6 text-dark">
+              Made by:
+              <a class="text-dark">One Man down. (Nov 2022 Code Institue Hackathon)</a>
+            </div>
+            <div class="col-6 text-right">
+            <button type="button" class="btn btn-primary btn-sm btn-floating mx-2" style="background-color: black;">
               <i class="fab fa-facebook-f"></i>
             </button>
-            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <button type="button" class="btn btn-primary btn-sm btn-floating mx-2" style="background-color: black;">
               <i class="fab fa-youtube"></i>
             </button>
-            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <button type="button" class="btn btn-primary btn-sm btn-floating mx-2" style="background-color: black;">
               <i class="fab fa-instagram"></i>
             </button>
-            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <button type="button" class="btn btn-primary btn-sm btn-floating mx-2" style="background-color: black;">
               <i class="fab fa-twitter"></i>
             </button>
-          </div>
-      
-          <!-- Copyright -->
-          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            Made by:
-            <a class="text-white">One Man down. (Nov 2022 Code Institue Hackathon)</a>
+            </div>
           </div>
           <!-- Copyright -->
         </footer>
-        
       </div>
       <!-- End of .container -->  
 
