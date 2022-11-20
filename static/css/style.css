@@ -12,7 +12,6 @@ body {
 
 #main-buttons {
     position: absolute;
-    background-color: white;
     top:400px;
     left: 0; 
     right: 0; 
@@ -167,10 +166,6 @@ body {
 /*..............................................................Game Popups*/
 
 #question {
-    position: absolute;
-    background-color: white;
-    top: 100px;
-    z-index: 999;
     display: none;
 }
 
@@ -188,16 +183,6 @@ body {
     top: 770px;
     z-index: 999;
     display: none;
-}
-
-#counter-area {
-    position: absolute;
-    top: 200px;
-    z-index: 999;
-}
-
-#counter {
-    background-color: pink;
 }
 
 /* Game play overlay */
