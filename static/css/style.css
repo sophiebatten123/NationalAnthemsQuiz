@@ -65,9 +65,15 @@ body {
 /*.......................................................Header*/
 
 .header-background {
-    background-color: yellow;
     font-family: 'Comfortaa', cursive;
     height: auto;
+}
+
+.counter p {
+    margin-bottom: -10px;
+    position:absolute;
+    z-index: 1;
+    padding: 10px;
 }
 
 /*.......................................................Rules Header*/
@@ -96,18 +102,7 @@ body {
     right: 0; 
     margin-left: auto;
     width: 150px;
-    height: 1500px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto;
-    width: 150px;
     height: 150px;
-    margin-right: auto; 
-    z-index: 999;
-    border: solid 2px black;
-    border-radius: 50%;
-    text-align: center;
-    display: none;
     margin-right: auto; 
     z-index: 999;
     border: solid 2px black;
@@ -120,22 +115,8 @@ body {
     cursor: pointer;
 }
 
-#pause {
-    font-size: 40px;
-}
-
-#pause:hover {
-    cursor: pointer;
-}
-
 .text-right {
     text-align: right;
-}
-
-.buttons {
-    position: absolute;
-    top: 200px;
-    z-index: 999;
 }
 
 /*.......................................................User login*/
@@ -150,10 +131,22 @@ body {
     color: #727269;
 }
 
+.form-button {
+    border: solid;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.log-box {
+    border-radius: 25px;
+    padding: 20px;
+}
+
 /*.......................................................Map Styling*/
 
 .maps {
-    margin-top: -2%;;
     margin-left: -10%;
     height: auto;
     cursor: pointer;
@@ -197,7 +190,7 @@ body {
     display: none;
 }
 
-#question {
+#pop-up {
     position: absolute;
     background-color: white;
     top: 100px;
@@ -258,7 +251,6 @@ body {
     padding: 5px;
     width: 100%;
     background-color: white !important;
-
 }
 
 .info-button:hover {
@@ -676,4 +668,35 @@ path#GN {
     margin-top: 120px;
     border-radius: 25px!important;
 }
+
+/*-------------------------------------------------- logout */
+
+.form-button {
+    border: solid;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.log-box {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+
+/*-------------------------------------------------- Media Query */
+
+@media screen and (max-width: 768px) {
+h1 {
+    font-size: 50px;
+}
+
+
+
+}
+
+
+
 
