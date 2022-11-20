@@ -200,27 +200,55 @@ body {
 
 /*-----------------------------------------Country Colours*/
 
-/* path.Canada {
-    fill: #8ec341;
-    
-} */
+path.Canada {
+    fill: pink;    
+} 
 
-a [data-name=Russia]:hover {
-    opacity: 100%;
-    stroke: rgb(205, 255, 236);
-    border: 33px solid red;
+path#France {
+    fill: red;
 }
 
 path#GL {
     fill: red;
 }
 
+path#IE {
+    fill: green;
+}
+
 path#IS {
     fill: blue;
 }
 
+path#PL {
+    fill: blue;
+}
+
+path#ZM {
+    fill: blue;
+}
+
+path#Italy {
+    fill: blue;
+}
 path#EC {
     fill: orange;
+}
+
+path#BY {
+    fill: orange;
+}
+
+path#Germany {
+    fill: orange;
+}
+
+path#SR {
+    fill: orange;
+}
+
+path#Greece {
+    fill: yellow;
 }
 
 path#PE {
@@ -239,19 +267,23 @@ path#PY {
     fill: #2b3e8e;
 }
 
+path#Philippines {
+    fill: #2b3e8e;
+}
+
 path#UY {
     fill: red;
 }
 
-path.Argentina {
+path#Argentina {
     fill: #2375b7;
 }
 
-path.Chile {
+path#Chile {
     fill: #6cb675;
 }
 
-path.United.States {
+path#UnitedStates {
     fill: #2375b7;
 }
 
@@ -271,11 +303,11 @@ path#HT {
     fill: orange;
 }
 
-path.Russian.Federation {
+path#Russia {
     fill: #2375b7;
 }
 
-path.Norway {
+path#Norway {
     fill: #be212f;
 }
 
@@ -283,19 +315,27 @@ path#SE {
     fill: yellow;
 }
 
+path#Angola {
+    fill: yellow;
+}
+
 path#FI {
     fill: #287028;
 }
 
-path.United.Kingdom {
+path#United.Kingdom {
     fill: #5a5ac7;
 }
 
-path.China {
+path#ZA {
+    fill: #5a5ac7;
+}
+
+path#China {
     fill: #009347;
 }
 
-path.Australia {
+path#Australia {
     fill: #026737;
 }
 
@@ -312,7 +352,7 @@ path#PK {
 }
 
 path#MN {
-    fill: #8dc143;
+    fill: yellow;
 }
 
 path#KZ {
@@ -323,7 +363,21 @@ path#KG {
     fill: #29abe3;
 }
 
+path#NL {
+    fill: #29abe3;
+}
+
+path#SS {
+    fill: #29abe3;
+}
+
+
+
 path#UZ {
+    fill: #2c346d;
+}
+
+path#TZ {
     fill: #2c346d;
 }
 
@@ -331,7 +385,27 @@ path#TJ {
     fill: pink;
 }
 
+path#CM {
+    fill: pink;
+}
+
+path#MG {
+    fill: pink;
+}
+
+path#CZ {
+    fill: pink;
+}
+
+path#Japan {
+    fill: pink;
+}
+
 path#TM {
+    fill: #036934;
+}
+
+path#UG {
     fill: #036934;
 }
 
@@ -343,7 +417,27 @@ path#AM {
     fill: red;
 }
 
+path#UA {
+    fill: red;
+}
+
+path#TG {
+    fill: red;
+}
+
+path#Indonesia {
+    fill: red;
+}
+
 path#GE {
+    fill: #697d35;
+}
+
+path#NG {
+    fill: #697d35;
+}
+
+path#GH {
     fill: #697d35;
 }
 
@@ -355,11 +449,19 @@ path#LY {
     fill: #00aa9e;
 }
 
+path#ML {
+    fill: #00aa9e;
+}
+
 path#DZ {
     fill: #026737;
 }
 
 path#MR {
+    fill: orange;
+}
+
+path#BF {
     fill: orange;
 }
 
@@ -375,6 +477,18 @@ path#SD {
     fill: purple;
 }
 
+path#RO {
+    fill: purple;
+}
+
+path#LR {
+    fill: purple;
+}
+
+path#ET {
+    fill: orange;
+}
+
 path#NA {
     fill: green;
 }
@@ -383,24 +497,53 @@ path#NE {
     fill: #bdbdea;
 }
 
+path#VN {
+    fill: #bdbdea;
+}
+
+path#CF {
+    fill: #bdbdea;
+}
+
 path#NE {
     fill: #4949be;
 }
 
-path.New.Zealand {
+path#TD {
     fill: yellow;
 }
+
+path#TH {
+    fill: #4949be;
+}
+
+path#New.Zealand {
+    fill: yellow;
+}
+
+path#MM {
+    fill: yellow;
+}
+
 
 
 path#CD {
     fill: red;
 }
 
-path.Turkey {
+path#Turkey {
     fill: #2575b5;
 }
 
-path.Azerbaijan {
+path#Azerbaijan {
+    fill: #282b5e;
+}
+
+path#ZW {
+    fill: #282b5e;
+}
+
+path#SA {
     fill: #282b5e;
 }
 
@@ -412,9 +555,18 @@ path#GT {
     fill: #515eaa;
 }
 
+path#YE {
+    fill: #515eaa;
+}
+
 path#HN {
     fill: purple;
 }
+
+path#Spain {
+    fill: purple;
+}
+
 
 path#NI {
     fill: #e5d022;
@@ -432,12 +584,23 @@ path#CO {
     fill: #762424;
 }
 
+path#LR {
+    fill: #762424;
+}
+
+path#GA {
+    fill: #762424;
+}
+
 path#VE {
     fill: #092b67;
 }
 
 
-    /*-------------------------------------------------- logout */
+path#GN {
+    fill: #092b67;
+
+/*-------------------------------------------------- logout */
 
 .logout {
     
