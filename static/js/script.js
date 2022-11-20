@@ -76,7 +76,6 @@ function roundOne() {
 
 function roundTwo() {
     document.getElementById('round').innerHTML = "<p>Round Two</p>";
-    document.getElementById('Canada').style.fill = "green";
     document.getElementById('pop-up').style.display = "none";
     document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
 
@@ -94,8 +93,6 @@ function roundTwo() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'China') {
-                document.getElementById('China').style.fill = "black";
-                document.getElementById('Canada').style.fill = "green";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -107,9 +104,7 @@ function roundTwo() {
                 $('#audio').html('');
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
-                document.getElementById('China').style.fill = "black";
-                document.getElementById('Canada').style.fill = "green";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was China.</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundThree();
@@ -124,8 +119,6 @@ function roundTwo() {
 
 function roundThree() {
     document.getElementById('round').innerHTML = "<p>Round Three</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
     document.getElementById('pop-up').style.display = "none";
     document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
 
@@ -143,7 +136,6 @@ function roundThree() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'France') {
-                document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -155,8 +147,7 @@ function roundThree() {
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
-                document.getElementById('France').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was France</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundFour();
@@ -171,8 +162,6 @@ function roundThree() {
 
 function roundFour() {
     document.getElementById('round').innerHTML = "<p>Round Four</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
     document.getElementById('pop-up').style.display = "none";
     document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
 
@@ -190,7 +179,6 @@ function roundFour() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Germany') {
-                document.getElementById('Germany').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -202,8 +190,7 @@ function roundFour() {
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
-                document.getElementById('Germany').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was Germany</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundFive();
