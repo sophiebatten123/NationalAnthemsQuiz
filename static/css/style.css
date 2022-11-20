@@ -599,16 +599,9 @@ path#VE {
 
 path#GN {
     fill: #092b67;
+}
 
 /*-------------------------------------------------- logout */
-
-.logout {
-    
-    background-color: white;
-    height: 50%;
-    margin-top: 120px;
-    border-radius: 25px!important;
-}
 
 .form-button {
     border: solid;
@@ -616,4 +609,9 @@ path#GN {
     padding: 10px;
     border-radius: 10px;
     background-color: lightgray;
+}
+
+.log-box {
+    border-radius: 25px;
+    padding: 20px;
 }
