@@ -204,12 +204,30 @@ body {
 
 /*..............................................................Game Popups*/
 
+#final {
+    position: absolute;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    width: 400px;
+    background-color: white;
+    top: 400px;
+    z-index: 999;
+    display: none;
+}
+
 #question {
     display: none;
 }
 
 #pop-up {
     position: absolute;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    width: 400px;
     background-color: white;
     top: 100px;
     z-index: 999;

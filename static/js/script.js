@@ -42,7 +42,6 @@ function roundOne() {
     }
     
     let country = document.getElementsByClassName("country");
-    let score = document.querySelector('.score');
     
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
@@ -51,8 +50,6 @@ function roundOne() {
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundTwo();
                 }
                 $('#audio').html('');
@@ -76,15 +73,12 @@ function roundOne() {
 function roundTwo() {
     document.getElementById('round').innerHTML = "<p>Round Two</p>";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/china.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -92,17 +86,19 @@ function roundTwo() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'China') {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundThree();
                 }
                 counter += 1;
                 $('#audio').html('');
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was China.</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -119,15 +115,13 @@ function roundTwo() {
 function roundThree() {
     document.getElementById('round').innerHTML = "<p>Round Three</p>";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('play').style.display = "block";
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('China').style.fill = "#009347";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/france.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -135,17 +129,21 @@ function roundThree() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'France') {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundFour();
                 }
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was France</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -162,15 +160,14 @@ function roundThree() {
 function roundFour() {
     document.getElementById('round').innerHTML = "<p>Round Four</p>";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('China').style.fill = "#009347";
+    document.getElementById('France').style.fill = "#ff0000";
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/germany.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -178,17 +175,23 @@ function roundFour() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Germany') {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundFive();
                 }
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was Germany</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
@@ -204,18 +207,16 @@ function roundFour() {
 
 function roundFive() {
     document.getElementById('round').innerHTML = "<p>Round Five</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('China').style.fill = "#009347";
+    document.getElementById('France').style.fill = "#ff0000";
+    document.getElementById('Germany').style.fill = "#ffa500";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/japan.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -223,20 +224,26 @@ function roundFive() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Japan') {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
                 document.getElementById('Japan').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundSix();
                 }
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
                 document.getElementById('Japan').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was Japan</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundSix();
@@ -251,18 +258,17 @@ function roundFive() {
 
 function roundSix() {
     document.getElementById('round').innerHTML = "<p>Round Six</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('China').style.fill = "#009347";
+    document.getElementById('France').style.fill = "#ff0000";
+    document.getElementById('Germany').style.fill = "#ffa500";
+    document.getElementById('Japan').style.fill = "#ffc0cb";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/russia.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -270,20 +276,28 @@ function roundSix() {
     for (let i=0; i < country.length; i++) {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Russia') {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
+                document.getElementById('Japan').style.fill = "#ffc0cb";
                 document.getElementById('Russia').style.fill = "black";
                 document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
                     roundSeven();
                 }
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
             } else {
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
+                document.getElementById('Japan').style.fill = "#ffc0cb";
                 document.getElementById('Russia').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer</p>";
+                document.getElementById('pop-up-text').innerHTML = "<p>Wrong Answer! The correct answer was Russia</p>";
                 document.getElementById('pop-up').style.display = "block";
                 document.getElementById('next-round').onclick = function() {
                     roundSeven();
@@ -298,18 +312,18 @@ function roundSix() {
 
 function roundSeven() {
     document.getElementById('round').innerHTML = "<p>Round Seven</p>";
-    document.getElementById('China').style.fill = "blue";
-    document.getElementById('Canada').style.fill = "green";
+    document.getElementById('Canada').style.fill = "#29bb7a";
+    document.getElementById('China').style.fill = "#009347";
+    document.getElementById('France').style.fill = "#ff0000";
+    document.getElementById('Germany').style.fill = "#ffa500";
+    document.getElementById('Japan').style.fill = "#ffc0cb";
+    document.getElementById('Russia').style.fill = "#2375b7";
     document.getElementById('pop-up').style.display = "none";
-    document.getElementById('play').innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+    document.getElementById('play').style.display = "block";
 
     document.getElementById('play').onclick = function() {
-        document.getElementById('play').innerHTML = '<i class="fa-solid fa-rotate-right"></i>';
+        document.getElementById('play').style.display = "none";
         $('#audio').html('<audio autoplay><source src="media/spain.mp3"></audio>');
-    }
-        
-    document.getElementById('pause').onclick = function() {
-        $('#audio').html('');
     }
     
     let country = document.getElementsByClassName("country");
@@ -318,22 +332,46 @@ function roundSeven() {
         country[i].addEventListener('click', function(e) {
             if(country[i].id == 'Spain') {
                 document.getElementById('pop-up').style.display = "none";
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
+                document.getElementById('Japan').style.fill = "#ffc0cb";
+                document.getElementById('Russia').style.fill = "#2375b7";
                 document.getElementById('Spain').style.fill = "black";
-                document.getElementById('pop-up-text').innerHTML = "<p>Correct Answer</p>";
-                document.getElementById('pop-up').style.display = "block";
-                document.getElementById('next-round').onclick = function() {
-                    result++;
-                    score.textContent = result;
-                }
+                document.getElementById('last-round-text').innerHTML = "<p>Correct Answer</p>";
+                document.getElementById('last-round').style.display = "block";
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
-                endGame();
+                document.getElementById('results').onclick = function() {
+                    document.getElementById('last-round').style.display = "none";
+                    document.getElementById('final').style.display = 'block';
+                    document.getElementById('final-text').innerHTML = '<p>Congratulations! You scored `${counter}`/10</p>';
+                    document.getElementById('end').onclick = function() {
+                        endGame();
+                    }
+                }
             } else {
                 document.getElementById('pop-up').style.display = "none";
+                document.getElementById('last-round-text').innerHTML = "<p>Wrong answer! The correct answer was Spain</p>";
+                document.getElementById('last-round').style.display = "block";
+                document.getElementById('Canada').style.fill = "#29bb7a";
+                document.getElementById('China').style.fill = "#009347";
+                document.getElementById('France').style.fill = "#ff0000";
+                document.getElementById('Germany').style.fill = "#ffa500";
+                document.getElementById('Japan').style.fill = "#ffc0cb";
+                document.getElementById('Russia').style.fill = "#2375b7";
                 document.getElementById('Spain').style.fill = "black";
                 $('#audio').html('');
-                endGame();
+                document.getElementById('results').onclick = function() {
+                    document.getElementById('last-round').style.display = "none";
+                    document.getElementById('final').style.display = 'block';
+                    document.getElementById('final-text').innerHTML = `${counter}`;
+                    document.getElementById('end').onclick = function() {
+                        endGame();
+                    }
+                }
             }
         })
     }
@@ -342,6 +380,8 @@ function roundSeven() {
 // End Game
 
 function endGame() {
+    document.getElementById('final').display = 'block';
+    document.getElementById('final-text').innerHTML = `${counter}`;
     fetch("add_score/", {
         method: "POST",
             headers: {
