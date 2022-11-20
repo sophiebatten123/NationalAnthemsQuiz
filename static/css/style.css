@@ -23,6 +23,19 @@ body {
     border-radius: 5px;
 }
 
+#main-buttons {
+    position: absolute;
+    background-color: white;
+    top:400px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    width: 400px; 
+    margin-right: auto; 
+    z-index: 999;
+    border-radius: 5px;
+}
+
 /*.......................................................Highscores*/
 
 #highscore {
@@ -76,12 +89,26 @@ body {
     font-size: 95px;
     background-color: white;
     position: absolute;
+    top: 95px;
+    background-color: white;
+    position: absolute;
     top: 400px;
     left: 0; 
     right: 0; 
     margin-left: auto;
     width: 150px;
+    height: 1500px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    width: 150px;
     height: 150px;
+    margin-right: auto; 
+    z-index: 999;
+    border: solid 2px black;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
     margin-right: auto; 
     z-index: 999;
     border: solid 2px black;
@@ -94,8 +121,22 @@ body {
     cursor: pointer;
 }
 
+#pause {
+    font-size: 40px;
+}
+
+#pause:hover {
+    cursor: pointer;
+}
+
 .text-right {
     text-align: right;
+}
+
+.buttons {
+    position: absolute;
+    top: 200px;
+    z-index: 999;
 }
 
 /*.......................................................User login*/
@@ -152,6 +193,14 @@ body {
 }
 
 /*..............................................................Game Popups*/
+
+#question {
+    position: absolute;
+    background-color: white;
+    top: 100px;
+    z-index: 999;
+    display: none;
+}
 
 #question {
     position: absolute;
