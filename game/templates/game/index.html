@@ -6,9 +6,11 @@
 <!-- Game Play Rules and leaderboard buttons -->
 
 <div class="container" id="main-buttons">
+
+<div class="container info-buttons" id="main-buttons">
     <div class="list-group mx-auto justify-content-center pt-4 pb-4">
         <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
-        <a href=""><button type="link" class="list-item info-button">Rules</button></a>
+        <a href="{% url 'rules' %}"><button type="link" class="list-item info-button">Rules</button></a>
         <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
     </div>
 </div>
