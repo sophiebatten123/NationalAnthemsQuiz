@@ -10,6 +10,33 @@ body {
     text-align: center;
 }
 
+/*.......................................................Highscores*/
+
+#highscore {
+    position: absolute;
+    top: 300px;
+    z-index: 999;
+    display: none;
+}
+
+#high {
+    position: absolute;
+    top: 300px;
+    z-index: 999;
+}
+
+.white {
+    background-color: white;
+}
+
+#last-round {
+    background-color: white;
+    position: absolute;
+    top: 400px;
+    z-index: 999;
+}
+
+
 /*.......................................................Header*/
 
 .header-background {
@@ -123,6 +150,24 @@ body {
     top: 770px;
     z-index: 999;
     display: none;
+}
+
+#last-round {
+    position: absolute;
+    background-color: white;
+    top: 770px;
+    z-index: 999;
+    display: none;
+}
+
+#counter-area {
+    position: absolute;
+    top: 200px;
+    z-index: 999;
+}
+
+#counter {
+    background-color: pink;
 }
 
 /* Game play overlay */
@@ -551,6 +596,24 @@ path#VE {
     fill: #092b67;
 }
 
+
 path#GN {
     fill: #092b67;
+
+/*-------------------------------------------------- logout */
+
+.logout {
+    
+    background-color: white;
+    height: 50%;
+    margin-top: 120px;
+    border-radius: 25px!important;
+}
+
+.form-button {
+    border: solid;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
 }
