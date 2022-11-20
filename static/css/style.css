@@ -65,6 +65,7 @@ body {
 /*.......................................................Header*/
 
 .header-background {
+    background-color: yellow;
     font-family: 'Comfortaa', cursive;
     height: auto;
 }
@@ -88,6 +89,24 @@ body {
     color: #727269;
 }
 
+/* modal */ 
+#closeButton {
+    background-color:#7d7ded;
+    margin: auto
+}
+
+#closeButton:hover {
+    background-color: #6969c9;
+}
+
+.modal-body {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.modal-content {
+    background: #7d7ded;
+}
 /*.......................................................Play button*/
 
 #play {

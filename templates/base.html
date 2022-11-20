@@ -30,8 +30,43 @@
     <header class="container-fluid header-background">
       <div class="row pt-4 pb-2">
         <div class="col-4 rules-header">
-          <i class="fa-solid fa-circle-question pl-4" id="restartButton"></i>
-        </div>
+          <i class="fa-solid fa-circle-question pl-4" id="rulesBtn" data-toggle="modal" data-target="#exampleModalCenter"></i>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> -->
+            <!-- to make the model bigger, add modal-lag -->
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header"  style="background: #7d7ded;">
+                  <h5 class="modal-title text-center" id="exampleModalLongTitle"><strong>Rules Of the Game</strong></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                      <h4 class="text-center">Welcome to National Anthems!</h4>
+                      <p>Arguably the best National Anthems based quiz on the internet!</p>
+                      <p> <strong>Here is how you play</strong> </p>
+                      <ol>
+                          <li>Click the play game button on the home page</li>
+                          <li>Click the play button at the top of the screen</li>
+                          <li>listen to the national anthem</li>
+                          <li>click on the area of the map you think the anthem is from</li>
+                      </ol>
+                      <p>If you get the question right you will see a congratulations banner 
+                          at the bottom of the screen and your score will increment by 1. 
+                          <br><br>
+                          If you are incorrect you will also be notified a the bottom of the screen
+                          and the correct country will colour black.
+                        </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary  text-center" id="closeButton" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+
         <div class="col-4 btns">
           <a href="#">
             <h1 class="text-center">National Anthems</h1>
