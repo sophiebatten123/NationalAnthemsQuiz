@@ -36,13 +36,9 @@
     </div>
 </div>
 <!--Message Popups-->
-<div class="container-fluid" id="pop-up">
-    <div class="row">
-        <div class="col-4">
-            <span id="pop-up-text"></span>
-            <button type="link" class="list-item info-button" id="next-round">Next Round</button>
-        </div>
-    </div>
+<div class="container" id="pop-up">
+    <span id="pop-up-text"></span>
+    <button type="link" class="list-item info-button" id="next-round">Next Round</button>
 </div>
 
 <!--Highscore Board-->
@@ -65,12 +61,16 @@
 </div>
 
 <!--Last Round-->
-<div class="container-fluid" id="last-round">
-    <div class="row">
-        <div class="col-12">
-            <a href="{% url 'add_score' %}" class="dropdown-item">See my score</a>
-        </div>
-    </div>
+<div class="container" id="last-round">
+    <span id="last-round-text"></span>
+    <button type="link" class="list-item info-button" id="results">See your Results</button>
+</div>
+
+<!--Score-->
+<div class="container" id="final">
+    <p>Congratulations for completing the quiz! Your score is:</p>
+    <span id="final-text"></span>
+    <button type="link" class="list-item info-button" id="end">End Game</button>
 </div>
 
 
