@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="overlay d-flex">
-      <div class="logout list-group col-6 mx-auto justify-content-center">
+<div class="container-fluid" id="high">
+  <div class="row">
+    <div class="col-md-6 col-lg-6 offset-md-3 offset-lg-3 col-sm-12 white log-box">
         <div class="text-center">
           <h1>{% trans "Sign Out" %}</h1>
 
@@ -18,9 +18,9 @@
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
             {% endif %}
-            <button class="form-button" type="submit">{% trans 'Sign Out' %}</button> <a href="{% url 'index' %}"><button type="link" class="form-button">Home</button></a>
-            
+            <button class="form-button" type="submit">{% trans 'Sign Out' %}</button>
           </form>
+        </div>
         </div>
     </div>     
   </div>

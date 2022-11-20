@@ -74,6 +74,7 @@ body {
     color: #727269;
 }
 
+
 /*.......................................................Map Styling*/
 
 .maps {
@@ -130,6 +131,8 @@ body {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
+
+
 
 .info-button {
     margin: 3px;
@@ -379,4 +382,9 @@ path#CO {
 
 path#VE {
     fill: #092b67;
+}
+
+.log-box {
+    border-radius: 34px;
+    padding: 32px;
 }

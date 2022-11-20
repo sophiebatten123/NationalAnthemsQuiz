@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid" id="high">
+    <div class="row">  
+        <div class="col-md-6 col-lg-6 offset-md-3 offset-lg-3 col-sm-12 white log-box">
+            <h1 class="text-center">Rules</h1>
+            <p>Welcome to National Anthems!</p>
+            <p>Arguably the best National Anthems based quiz on the internet!</p>
+            <p>Here is how you play</p>
+            <ol>
+                <li>Click the play game button on the home page</li>
+                <li>Click the play button at the top of the screen</li>
+                <li>listen to the national anthem</li>
+                <li>click on the area of the map you think the anthem is from</li>
+            </ol>
+            <p>It's as simple as that!</p>
+            <p>If you get the question right you will see a congratulations banner <br>
+                at the bottom of the screen and your score will increment by 1. 
+            </p>
+            <p> If you are incorrect you will also be notified a the bottom of the screen <br>
+                and the correct country will colour black.
+            </p>
+            <p>Please sign in to check out the leader board and see how you have scored againt other players!</p>
+
+            <a href="{% url 'index' %}"><span class="form-button text-right">Home</span></a>
+            
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
