@@ -61,7 +61,10 @@ body {
     margin-bottom: -10px;
     position:absolute;
     z-index: 1;
+    padding: 10px;
 }
+
+
 /*.......................................................Rules Header*/
 
 .rules-header {
