@@ -45,10 +45,6 @@ body {
     height: auto;
 }
 
-.heading:hover {
-    cursor: pointer;
-}
-
 /*.......................................................Rules Header*/
 
 .rules-header {
