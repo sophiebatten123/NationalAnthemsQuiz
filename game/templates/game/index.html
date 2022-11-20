@@ -3,49 +3,25 @@
 
 {% block content %}
 
-<!-- score -->
-<div class="score-div">
-    score: 
-    <span class="score">0</span>
-</div>
-
 <!-- Game Play Rules and leaderboard buttons -->
 
-<div class="container-fluid" id="high">
-    <div class="row">  
-        <div class="list-group col-md-6 col-lg-4 offset-md-3 offset-lg-4 col-sm-12 log-box">
-            <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
-            
-            <a href="{% url 'rules' %}"><button type="link" class="list-item info-button">Rules</button></a>
-
-            <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
-            {% if user.is_authenticated %}
-            <a href="{% url 'account_logout' %}"><button type="link" class="list-item info-button">log out</button></a>
-            {% else %}
-            <a href="{% url 'account_signup' %}"><button type="link" class="list-item info-button">Register</button></a>
-            <a href="{% url 'account_login' %}"><button type="link" class="list-item info-button">log in</button></a>
-            {% endif %}
-        </div>
+<div class="container" id="main-buttons">
+    <div class="list-group mx-auto justify-content-center pt-4 pb-4">
+        <button type="link" class="list-item info-button" onclick="roundOne()">Play Game</button>
+        <a href=""><button type="link" class="list-item info-button">Rules</button></a>
+        <button type="link" class="list-item info-button" id="leader-board">Leader Board</button></a>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="question">
     <div class="row">
-        <div class="col-12 text-center pb-3">
+        <div class="col-12 text-center pt-2 pb-2">
             <h3>Where does the National Anthem come from?</h3>
         </div>
     </div>
 </div>
-<div class="container-fluid buttons">
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-3 pb-5 text-right" id="play">
-            <i class="fa-solid fa-circle-play"></i>
-        </div>
-        <div class="col-3 pb-5" id="pause">
-            <i class="fa-solid fa-circle-pause"></i>
-        </div>
-        <div class="col-3"></div>
-    </div>
+<div class="container" id="play">
+    <i class="fa-solid fa-circle-play"></i>
+</div>
 </div>
 <span id="audio"></span>
 <span id="round" class="pb-4"></span>
