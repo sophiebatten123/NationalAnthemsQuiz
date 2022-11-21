@@ -4,13 +4,13 @@
 {% block content %}
 <!--Highscore Board-->
 <div class="container-fluid" id="high">
-    <div class="row">
+    <div class="row text-center">
         <div class="col-4"></div>
         <div class="col-4 white">
             <a href="{% url 'index' %}"><span class="rules-button text-right mr-2"><i class="fa-solid fa-xmark"></i></span></a>
-            <h2>Highscores</h2>
+            <h2 style="color: #7d7ded; font-weight:500; text-align: center">Highscores</h2>
             <hr>
-            <table>
+            <table class="table table-hover table table-striped" style="color: white; background: #7d7ded; border: 2px solid black;">
                 {% for score in scores %}
                 <tr>
                     <td class="p-2 pr-4m-2"><p>{{score.name}}</p></td>
