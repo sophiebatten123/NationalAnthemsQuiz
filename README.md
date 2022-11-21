@@ -1,17 +1,17 @@
-[Game Live Link]()
+[Game Live Link](https://anthem-game.herokuapp.com/)
 [GitHub Repository](https://github.com/users/sophiebatten123/projects/2/views/1)
 
-## GAME NAME HERE
+## NATIONAL ANTHEMS
 
 (Developers: Sophie Batten, Laura Mayock, Sarah Todd, Muzhda Noorzad)
 
 ![Am I Responsive?]()
 
-**GAME NAME** is an educational and interative game that tests a players knowledge of some of the worlds most famous National Anthems.
+National Anthems is an educational and interative game that tests a players knowledge of some of the worlds most famous National Anthems.
 
 ## How to play
 
-To play **GAME NAME** click the 'Play Button' on the main page, be ready as after you have clicked the button you will hear the first National Anthem! 
+To play Nationak Anthems click the 'Play Button' on the main page, be ready as after you have clicked the button you will hear the first National Anthem! 
 
 After you have listened to the National Anthem you should select on the map which country you think it originates from, to select the answer click the country using your mouse. How did you do?
 
@@ -22,13 +22,13 @@ Click next to play the next National Anthem. Good Luck!
 - [Idea Brainstorming](#idea-brainstorming)
 - [User Stories](#user-stories)
 - [Wireframe](#wireframe)
-- [Site Features](#site-features)
+- [Testing](#testing)
 - [Credits](#credits)
 
 
 ## Idea Brainstorming
 
-![Idea Brainstorming](assets/images/ideas-brainstorm.PNG)
+![Idea Brainstorming](static/images/ideas-brainstorm.png)
 
 ## User Stories
 
@@ -62,8 +62,24 @@ Click next to play the next National Anthem. Good Luck!
 
 ## Wireframe
 
-![Game Wireframe](assets/images/wireframe.png)
+![Game Wireframe](static/images/wireframe.png)
 
-## Site Features
+## Kanban
+
+![Game kanban](static/images/kanban.png)
+
+## Testing
+
+- We have tested the site in line with the user stories
+ - Game Functionality
+ - Log in and Leaderboard
+  - Log in working correctly and storing user score on leaderboard when viewed.
+ - Social Media Links
+  - All social media links working correctly and opening in a new screen
+
+- We tested the game accross Chrome, Firefox and Safari
+
+- Responsiveness
+ - This game was designed to be played on a laptop or desktop device and uses the mouse click function to play.
 
 ## Credits
