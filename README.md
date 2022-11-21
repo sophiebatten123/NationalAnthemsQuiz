@@ -1,4 +1,5 @@
 [Game Live Link](https://anthem-game.herokuapp.com/)
+
 [GitHub Repository](https://github.com/users/sophiebatten123/projects/2/views/1)
 
 ## NATIONAL ANTHEMS
@@ -11,7 +12,7 @@ National Anthems is an educational and interative game that tests a players know
 
 ## How to play
 
-To play Nationak Anthems click the 'Play Button' on the main page, be ready as after you have clicked the button you will hear the first National Anthem! 
+To play National Anthems click the 'Play Button' on the main page, be ready as after you have clicked the button you will hear the first National Anthem! 
 
 After you have listened to the National Anthem you should select on the map which country you think it originates from, to select the answer click the country using your mouse. How did you do?
 
@@ -24,6 +25,7 @@ Click next to play the next National Anthem. Good Luck!
 - [Wireframe](#wireframe)
 - [Testing](#testing)
 - [Credits](#credits)
+- [Acknowlegements](#Acknowlegements)
 
 
 ## Idea Brainstorming
@@ -70,16 +72,43 @@ Click next to play the next National Anthem. Good Luck!
 
 ## Testing
 
-- We have tested the site in line with the user stories
- - Game Functionality
- - Log in and Leaderboard
-  - Log in working correctly and storing user score on leaderboard when viewed.
- - Social Media Links
-  - All social media links working correctly and opening in a new screen
+We have tested the site in line with the user stories
+- Game Functionality 
+    - Bug found when you play the game when you select a country in the background it registers as the previous answer.   
+        - possible solution to put an overlay over the map after each round so they cant be picked.
+    - Bug found, after each round the correct answer from the previous round can increment the score.
+        - Possible solution is to make previous selected countrys unselectable.
+- Log in and Leaderboard
+    - Log in functionality is working correctly, and if the user is logged in the users score is stored correctly on the leaderboard(only the top 7 values appear).
+- Social Media Links
+    - All social media links are working correctly and opening in a new screen.
 
-- We tested the game accross Chrome, Firefox and Safari
+## Testing
 
-- Responsiveness
- - This game was designed to be played on a laptop or desktop device and uses the mouse click function to play.
+We tested the game accross Chrome and Firefox
+
+Responsiveness
+- This game was designed to be played on a laptop or desktop device and uses the mouse click function to play.
+
+### Lighthouse Test
+![lighthouse](static/images/lighthouse-na.png)
+
+### Jshint 
+![jshint](static/images/jshint.png)
+
+### CSS
+![CSS](static/images/css-validator.png)
+
 
 ## Credits
+
+- World Map came from - https://simplemaps.com/custom/world
+- Anthems came from
+    - https://soundspunos.com/anthems/
+    - https://nationalanthems.info/ca.htm
+
+## Acknowledgements
+
+Thank you to 
+Sophe, Laura Muzhda and Sarah for all your hard work!!
+Andrew_Hackteam for helping us when we were stuck
