@@ -44,13 +44,14 @@ body {
 }
 
 .footer-colour {
-    background-color: yellow;
+    background-color: rgb(251, 251, 251);
 }
 
 /*.......................................................Highscores*/
 
 #score-counter {
     display: none;
+    color: white;
 }
 
 #highscore {
@@ -62,7 +63,7 @@ body {
 
 #high {
     position: absolute;
-    top: 300px;
+    top: 200px;
     z-index: 999;
 }
 
@@ -83,11 +84,17 @@ body {
     z-index: 999;
 }
 
+/* ..............................................Counter and rounds */
+
+#round {
+    color: white;
+}
+
 
 /*.......................................................Header*/
 
 .header-background {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     font-family: 'Comfortaa', cursive;
     height: auto;
 }
@@ -247,7 +254,10 @@ body {
 
 #question {
     display: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 50%;
 }
+
 
 #pop-up {
     position: absolute;
