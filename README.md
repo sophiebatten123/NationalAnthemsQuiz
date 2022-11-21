@@ -5,7 +5,7 @@
 
 (Developers: Sophie Batten, Laura Mayock, Sarah Todd, Muzhda Noorzad)
 
-![Am I Responsive?]()
+![Main Image](static/images/map.png)
 
 National Anthems is an educational and interative game that tests a players knowledge of some of the worlds most famous National Anthems.
 
