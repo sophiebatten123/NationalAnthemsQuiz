@@ -44,7 +44,7 @@ body {
 }
 
 .footer-colour {
-    background-color: rgb(251, 251, 251);
+    background-color: yellow;
 }
 
 /*.......................................................Highscores*/
@@ -94,7 +94,7 @@ body {
 /*.......................................................Header*/
 
 .header-background {
-    background-color: rgb(255, 255, 255);
+    background-color: yellow;
     font-family: 'Comfortaa', cursive;
     height: auto;
 }
