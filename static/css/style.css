@@ -36,6 +36,7 @@ body {
 
 .btns a:hover {
     text-decoration: none;
+    color: black;
 }
 
 .btns a {
@@ -48,6 +49,10 @@ body {
 
 /*.......................................................Highscores*/
 
+#score-counter {
+    display: none;
+}
+
 #highscore {
     position: absolute;
     top: 300px;
@@ -58,6 +63,12 @@ body {
 #high {
     position: absolute;
     top: 300px;
+    z-index: 999;
+}
+
+#rule-box {
+    position: absolute;
+    top: 140px;
     z-index: 999;
 }
 
@@ -165,12 +176,11 @@ body {
     color: #727269;
 }
 
-.form-button {
-    border: solid;
+.rules-button {
     color: black;
     padding: 10px;
-    border-radius: 10px;
-    background-color: lightgray;
+    float: right;
+    font-size: 20px;
 }
 
 .log-box {
@@ -228,7 +238,9 @@ body {
     margin-left: auto;
     width: 400px;
     background-color: white;
-    top: 400px;
+    top: 450px;
+    padding: 30px;
+    border-radius: 20px;
     z-index: 999;
     display: none;
 }
@@ -245,23 +257,24 @@ body {
     margin-left: auto;
     width: 400px;
     background-color: white;
-    top: 100px;
-    z-index: 999;
-    display: none;
-}
-
-#pop-up {
-    position: absolute;
-    background-color: white;
-    top: 770px;
+    top: 450px;
+    padding: 30px;
+    border-radius: 20px;
     z-index: 999;
     display: none;
 }
 
 #last-round {
     position: absolute;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    width: 400px;
     background-color: white;
-    top: 770px;
+    top: 450px;
+    padding: 30px;
+    border-radius: 20px;
     z-index: 999;
     display: none;
 }

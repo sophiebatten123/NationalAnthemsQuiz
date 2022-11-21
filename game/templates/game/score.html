@@ -7,12 +7,14 @@
     <div class="row">
         <div class="col-4"></div>
         <div class="col-4 white">
+            <a href="{% url 'index' %}"><span class="rules-button text-right mr-2"><i class="fa-solid fa-xmark"></i></span></a>
             <h2>Highscores</h2>
+            <hr>
             <table>
                 {% for score in scores %}
                 <tr>
                     <td class="p-2 pr-4m-2"><p>{{score.name}}</p></td>
-                    <td class="p-2 pr-4m-2"><p class="pl-4">{{score.score}}/10</p></td>
+                    <td class="p-2 pr-4m-2"><p class="pl-4">{{score.score}}/7</p></td>
                 </tr>
                 {% endfor %}
             </table>
