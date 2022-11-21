@@ -1,3 +1,4 @@
+
 // Cookie
 
 function getCookie(name) {
@@ -16,7 +17,7 @@ function getCookie(name) {
     return cookieValue;
 }
 
-const csrftoken = getCookie('csrftoken');
+//const csrftoken = getCookie('csrftoken');
 
 // Counter
 
@@ -26,7 +27,7 @@ var counter = 0;
 
 document.getElementById('leader-board').onclick = function() {
     document.getElementById('highscore').style.display = "block";
-}
+};
 
 
 // Round One
@@ -52,7 +53,7 @@ function roundOne() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundTwo();
-                }
+                };
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -63,12 +64,12 @@ function roundOne() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundTwo();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Two
@@ -95,7 +96,7 @@ function roundTwo() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundThree();
-                }
+                };
                 counter += 1;
                 $('#audio').html('');
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -107,12 +108,12 @@ function roundTwo() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundThree();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Three
@@ -141,7 +142,7 @@ function roundThree() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundFour();
-                }
+                };
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -154,12 +155,12 @@ function roundThree() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundFour();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Four
@@ -190,7 +191,7 @@ function roundFour() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundFive();
-                }
+                };
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -204,12 +205,12 @@ function roundFour() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundFive();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Five
@@ -242,7 +243,7 @@ function roundFive() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundSix();
-                }
+                };
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -257,12 +258,12 @@ function roundFive() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundSix();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Six
@@ -297,7 +298,7 @@ function roundSix() {
                 document.getElementById('pop-up').style.backgroundColor = "green";
                 document.getElementById('next-round').onclick = function() {
                     roundSeven();
-                }
+                };
                 $('#audio').html('');
                 counter += 1;
                 document.getElementById('counter').innerHTML = `${counter}`;
@@ -313,12 +314,12 @@ function roundSix() {
                 document.getElementById('pop-up').style.backgroundColor = "red";
                 document.getElementById('next-round').onclick = function() {
                     roundSeven();
-                }
+                };
                 $('#audio').html('');
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // Round Seven
@@ -363,8 +364,8 @@ function roundSeven() {
                     document.getElementById('final-text').innerHTML = '<p>Congratulations! You scored `${counter}`/10</p>';
                     document.getElementById('end').onclick = function() {
                         endGame();
-                    }
-                }
+                    };
+                };
             } else {
                 document.getElementById('pop-up').style.display = "none";
                 document.getElementById('last-round-text').innerHTML = "<p>Wrong answer! The correct answer was Spain</p>";
@@ -384,12 +385,12 @@ function roundSeven() {
                     document.getElementById('final-text').innerHTML = `${counter}`;
                     document.getElementById('end').onclick = function() {
                         endGame();
-                    }
-                }
+                    };
+                };
             }
-            })
+            });
         }
-    }
+    };
 }
 
 // End Game
@@ -449,9 +450,4 @@ window.onmousemove = function (e) {
     tooltipSpan.style.left = (x) + 'px';
 };
 
-//restart Button 
-// const restartButton = document.querySelector('');
-// restartButton.addEventListener("click", () => {
-//     console.log("Restart")
-// });
 
