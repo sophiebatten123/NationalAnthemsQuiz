@@ -27,11 +27,11 @@
 <!--Counter and rounds-->
 <div class="container-fluid">
     <div class="row sea">
-        <div class="col-6">
-            <span id="round"class="pt-1"></span>
+        <div class="col-6 pt-2">
+            <p><b><span id="round"class="pt-1"></span></b></p>
         </div>
-        <div class="col-6 text-right">
-            <p>Current Score:<span id="counter">0</span></p>
+        <div class="col-6 text-right pt-2" id="score-counter">
+            <p><b>Current Score: <span id="counter">0</span></b></p>
         </div>
     </div>
 </div>
@@ -69,9 +69,9 @@
 
 <!--Score-->
 <div class="container" id="final">
-    <p>Congratulations for completing the quiz! Your score is:</p>
-    <span id="final-text"></span>
-    <button type="link" class="list-item info-button" id="end">End Game</button>
+    <p>Congratulations for completing the quiz!</p>
+    <p>You scored: <b><span id="final-text"></span>/7</b></p>
+    <button type="link" class="list-item info-button" id="end">View Leaderboard</button>
 </div>
 
 

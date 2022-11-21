@@ -3,10 +3,12 @@
 
 {% block content %}
 
-<div class="container-fluid" id="high">
+<div class="container-fluid" id="rule-box">
     <div class="row">  
         <div class="col-md-6 col-lg-6 offset-md-3 offset-lg-3 col-sm-12 white log-box">
-            <h1 class="text-center">Rules</h1>
+            <a href="{% url 'index' %}"><span class="rules-button text-right mr-2"><i class="fa-solid fa-xmark"></i></span></a>
+            <h1>Rules</h1>
+            <hr>
             <p>Welcome to National Anthems!</p>
             <p>Arguably the best National Anthems based quiz on the internet!</p>
             <p>Here is how you play</p>
@@ -23,11 +25,7 @@
             <p> If you are incorrect you will also be notified a the bottom of the screen <br>
                 and the correct country will colour black.
             </p>
-            <p>Please sign in to check out the leader board and see how you have scored againt other players!</p>
-
-            <a href="{% url 'index' %}"><span class="form-button text-right">Home</span></a>
-            
-            
+            <p>Please sign in to check out the leader board and see how you have scored againt other players!</p>            
         </div>
     </div>
 </div>
