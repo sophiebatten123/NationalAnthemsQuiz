@@ -1,4 +1,5 @@
 import json
+from django.core.paginator import Paginator
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from .models import Score
@@ -34,15 +35,17 @@ def add_score(request):
         score = request_body['score']
         number.score = score
         number.name = request.user
-        paginate_by = 7
         number.save()
-
         numbers = Score.objects.all().values()
-
+    
     scores = Score.objects.all()
+    paginator = Paginator(scores, 7) # Show 7 scores per page.
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
     context = {
         'scores': scores,
+        'page_obj': page_obj,
     }
 
     return render(request, 'game/score.html', context)
